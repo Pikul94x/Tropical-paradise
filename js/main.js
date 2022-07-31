@@ -10,8 +10,18 @@ const handleNav = () => {
 			nav.classList.remove("nav--active");
 		});
 	});
+
+	handleNavItemsAnimation();
+};
+
+const handleNavItemsAnimation = () => {
+	let delay = 0;
+
+	allNavItems.forEach(item => {
+		item.classList.toggle("nav-items-animation");
+		item.style.animationDelay = `.${delay}s`
+		delay++
+	});
 };
 
 btn.addEventListener("click", handleNav);
-
-
