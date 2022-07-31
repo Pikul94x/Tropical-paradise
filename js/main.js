@@ -19,8 +19,8 @@ const handleNavItemsAnimation = () => {
 
 	allNavItems.forEach(item => {
 		item.classList.toggle("nav-items-animation");
-		item.style.animationDelay = `.${delay}s`
-		delay++
+		item.style.animationDelay = `.${delay}s`;
+		delay++;
 	});
 };
 
