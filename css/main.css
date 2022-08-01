@@ -94,6 +94,10 @@ body {
   font-size: 1.6rem;
 }
 
+.white-section {
+  background-color: #fff;
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -103,6 +107,7 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 1000;
+  mix-blend-mode: difference;
 }
 .burger-btn:focus {
   outline: none;
@@ -199,6 +204,12 @@ body {
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
 }
 
 .header {
@@ -307,7 +318,7 @@ body {
   background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/bora-bora-small.jpg");
 }
 .islands__card-img--third {
-  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.55), rgba(68, 0, 255, 0.55)), url("../img/water-small.jpg");
+  background-image: linear-gradient(45deg, rgba(10, 98, 214, 0.438), rgba(68, 0, 255, 0.55)), url("../img/water-small.jpg");
 }
 .islands__card-img-title {
   font-family: "Dancing Script", cursive;

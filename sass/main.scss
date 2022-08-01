@@ -17,8 +17,11 @@ html {
 
 body {
 	font-family: "Open Sans", sans-serif;
-
 	font-size: 1.6rem;
+}
+
+.white-section {
+	background-color: $pure-white;
 }
 
 // NAV
@@ -32,6 +35,7 @@ body {
 	border: 1px solid transparent;
 	cursor: pointer;
 	z-index: 1000;
+	mix-blend-mode: difference;
 
 	&:focus {
 		outline: none;
@@ -130,6 +134,12 @@ body {
 
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
 }
 
 // HEADER
